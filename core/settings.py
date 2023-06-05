@@ -15,8 +15,9 @@ import os
 from dotenv import load_dotenv
 
 import django
-from django.utils.translation import gettext
+from django.utils.translation import gettext, gettext_lazy
 django.utils.translation.ugettext = gettext
+django.utils.translation.ugettext_lazy = gettext_lazy
 
 # Load environment variables from .env file
 load_dotenv()
